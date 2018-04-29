@@ -1,0 +1,11 @@
+{
+  "name": "live-solar-declination",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:liyaodong/live-solar-declination.git",
+  "author": "Yaodong Li <ydli@thoughtworks.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server ./src"
+  }
+}
