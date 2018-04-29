@@ -2,15 +2,21 @@
 <html>
     <head>
         <script src="http://www.webglearth.com/v2/api.js"></script>
-        <style>
-         html, body{padding: 0; margin: 0;}
-         #earth_div{top: 0; right: 0; bottom: 0; left: 0;
-             background-color: #000; position: absolute !important;}
-        </style>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <link href="./index.css" rel="stylesheet"/>
         <title>Live solar declination</title>
     </head>
     <body>
         <div id="earth_div"></div>
+        <div class="options">
+            <label for="option-rotate">
+                <input id="option-rotate" checked name="rotate" type="checkbox" value=""/>
+                Rotate
+            </label>
+        </div>
         <script src="./index.js"></script>
     </body>
 </html>
