@@ -1,3 +1,5 @@
+// will add javascript bundler for avoid global scope issue
+
 // draw a line betwen two position
 const lineBetween = function(B, A) {
     let coords = [];
@@ -36,6 +38,10 @@ const rotateEarth = earth => {
     return () => {
         needAnim = false;
     };
+};
+
+const calcDeclination = dayOfYear => {
+    return dayOfYear => -23.44 * Math.cos(2 * Math.PI / 365 * (n + 10));
 };
 
 function initialize() {
